@@ -36,5 +36,14 @@ def cprint(message, color="HEADER"):
     print(bcolors[color]+message+bcolors["ENDC"])
 
 
+def weewoo(n):
+    for i in range(n):
+        if i % 2 != 0:
+            s = "wee"
+        else:
+            s = "woo"
+        cprint(s*i, "RED")
+
+
 if __name__ == '__main__':
     cprint("Sup yo")
